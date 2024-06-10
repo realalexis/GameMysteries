@@ -17,7 +17,7 @@ export const Header = ({ headerData, useMode }: HeaderProps) => {
       <div className="container mx-auto font-work px-5 sm:px-0">
         <div className="navbar grid grid-cols-12">
           <div className="col-span-3">
-            <Link href={`/`}>coucoou</Link>
+            <Link href={`/`}>GamesMysteries</Link>
           </div>
           <nav className="hidden xl:block col-span-6">
             <div className=" w-full flex items-center justify-center gap-10">
@@ -67,7 +67,7 @@ export const Header = ({ headerData, useMode }: HeaderProps) => {
               </div>
             </div>
             {/* Theme Switcher */}
-            {/*<input*/}
+            {/* <input*/}
             {/*   type="checkbox"*/}
             {/*   className={`toggle rounded-full ${*/}
             {/*      !lightMode ? 'toggle-primary' : ''*/}
@@ -80,7 +80,7 @@ export const Header = ({ headerData, useMode }: HeaderProps) => {
             {/*      }*/}
             {/*   }}*/}
             {/*   defaultChecked={theme === 'dark'}*/}
-            {/*/>*/}
+            {/*/> */}
 
             {/*Multi themes switcher */}
             <div className="flex-none">

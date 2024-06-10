@@ -1,14 +1,14 @@
 [
   {
     "id": 101,
-    "name": "Technology",
-    "slug": "technology",
+    "name": "Gaming",
+    "slug": "gaming",
     "count": 51
   },
   {
     "id": 102,
-    "name": "Lifestyle",
-    "slug": "lifestyle",
+    "name": "Entertainment",
+    "slug": "entertainment",
     "count": 30
   },
   {
@@ -19,20 +19,20 @@
   },
   {
     "id": 104,
-    "name": "Photography",
-    "slug": "photography",
+    "name": "Video Games",
+    "slug": "video-games",
     "count": 12
   },
   {
     "id": 105,
-    "name": "Health & Fitness",
-    "slug": "health-&-fitness",
+    "name": "Easter Eggs",
+    "slug": "easter-eggs",
     "count": 36
   },
   {
     "id": 106,
-    "name": "Business",
-    "slug": "business",
+    "name": "Technology",
+    "slug": "technology",
     "count": 91
   },
   {

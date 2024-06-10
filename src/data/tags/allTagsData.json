@@ -11,17 +11,17 @@
   },
   {
     "id": 391,
-    "name": "twitter",
+    "name": "twitter-2",
     "slug": "twitter-2"
   },
   {
     "id": 390,
-    "name": "Trending",
+    "name": "trending",
     "slug": "trending"
   },
   {
     "id": 389,
-    "name": "trackbacks",
+    "name": "trackbacks-2",
     "slug": "trackbacks-2"
   },
   {
@@ -41,12 +41,22 @@
   },
   {
     "id": 385,
-    "name": "the man",
+    "name": "the-man",
     "slug": "the-man"
   },
   {
     "id": 384,
     "name": "text",
     "slug": "text"
+  },
+  {
+    "id": 500,
+    "name": "bug",
+    "slug": "bug"
+  },
+  {
+    "id": 501,
+    "name": "easter-egg",
+    "slug": "easter-egg"
   }
 ]

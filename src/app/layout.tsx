@@ -1,6 +1,7 @@
 import { Plus_Jakarta_Sans, Source_Serif_4, Work_Sans } from "next/font/google";
 
 import "../styles/globals.css";
+import "swiper/css";
 import useMode, { Providers } from "../utils/themeMode";
 import { GlobalProvider } from "../context/store";
 import { Header } from "../component/ui/header";
