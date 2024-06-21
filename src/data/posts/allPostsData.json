@@ -13,6 +13,7 @@
       {
         "id": 305,
         "name": "Gaming",
+        "link": "/category/gaming/",
         "slug": "gaming",
         "taxonomy": "category"
       }
@@ -35,6 +36,7 @@
       {
         "id": 305,
         "name": "Gaming",
+        "link": "/category/gaming/",
         "slug": "gaming",
         "taxonomy": "category"
       }
@@ -57,6 +59,7 @@
       {
         "id": 307,
         "name": "Technology",
+        "link": "/category/technology/",
         "slug": "technology",
         "taxonomy": "category"
       }
@@ -79,6 +82,7 @@
       {
         "id": 307,
         "name": "Technology",
+        "link": "/category/technology/",
         "slug": "technology",
         "taxonomy": "category"
       }
@@ -101,6 +105,7 @@
       {
         "id": 308,
         "name": "Entertainment",
+        "link": "/category/easter-eggs/",
         "slug": "entertainment",
         "taxonomy": "category"
       }
@@ -123,7 +128,8 @@
       {
         "id": 309,
         "name": "Development",
-        "slug": "development",
+        "link": "/category/development/",
+        "slug": "software-development",
         "taxonomy": "category"
       }
     ],
@@ -145,6 +151,7 @@
       {
         "id": 305,
         "name": "Gaming",
+        "link": "/category/gaming/",
         "slug": "gaming",
         "taxonomy": "category"
       }
@@ -167,6 +174,7 @@
       {
         "id": 309,
         "name": "Development",
+        "link": "/category/easter-eggs/",
         "slug": "development",
         "taxonomy": "category"
       }

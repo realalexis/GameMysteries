@@ -38,7 +38,7 @@ export const PostOverlaySm = ({ cardData }: PostOverlaySmProps) => {
       <div className="card-body gap-0 absolute bottom-0 rounded-xl w-full z-20 p-6">
         <div className="flex flex-wrap items-center gap-1.5">
           {cardData?.category?.map((categoryData: any, index: number) => (
-            <Link href={`/category/right-sidebar`} key={index}>
+            <Link href={categoryData?.link} key={index}>
               <div className="badge bg-primary border-0 rounded-md">
                 {categoryData?.name}
               </div>
@@ -46,7 +46,7 @@ export const PostOverlaySm = ({ cardData }: PostOverlaySmProps) => {
           ))}
         </div>
         <div className="mt-3">
-          <Link href={`/single-post`}>
+          <Link href={`/single-post/${cardData?.id}`}>
             <h2 className="text-lg font-semibold line-clam-3 text-neutral-content hover:text-primary transition hover:duration-300 line-clamp-3">
               {cardData?.title ||
                 "The Impact of Technology on the Workplace: How Technology is Changing"}

@@ -3,42 +3,77 @@
     "id": 101,
     "name": "Gaming",
     "slug": "gaming",
-    "count": 51
+    "count": 51,
+    "link": "/category/gaming",
+    "featuredmedia": {
+      "sourceUrl": "/images/category/gaming.webp",
+      "alt": "Gaming"
+    }
   },
   {
     "id": 102,
-    "name": "Entertainment",
-    "slug": "entertainment",
-    "count": 30
+    "name": "Software Development",
+    "slug": "software-development",
+    "count": 30,
+    "link": "/category/software-development",
+    "featuredmedia": {
+      "sourceUrl": "/images/category/software-developement.jpeg",
+      "alt": "Software Development"
+    }
   },
   {
     "id": 103,
-    "name": "Photography",
-    "slug": "photography",
-    "count": 12
+    "name": "Internet Culture",
+    "slug": "internet-culture",
+    "count": 12,
+    "link": "/category/internet-culture",
+    "featuredmedia": {
+      "sourceUrl": "/images/category/internet-culture.png",
+      "alt": "Internet Culture"
+    }
   },
   {
     "id": 104,
     "name": "Video Games",
     "slug": "video-games",
-    "count": 12
+    "count": 12,
+    "link": "/category/video-games",
+    "featuredmedia": {
+      "sourceUrl": "/images/category/video-games.jpeg",
+      "alt": "Video Games"
+    }
   },
   {
     "id": 105,
     "name": "Easter Eggs",
     "slug": "easter-eggs",
-    "count": 36
+    "count": 36,
+    "link": "/category/easter-eggs",
+    "featuredmedia": {
+      "sourceUrl": "/images/category/easter-eggs.webp",
+      "alt": "Easter Eggs"
+    }
   },
   {
     "id": 106,
     "name": "Technology",
     "slug": "technology",
-    "count": 91
+    "count": 91,
+    "link": "/category/technology",
+    "featuredmedia": {
+      "sourceUrl": "/images/category/technology.webp",
+      "alt": "Technology"
+    }
   },
   {
     "id": 107,
-    "name": "Marketing",
-    "slug": "marketing",
-    "count": 47
+    "name": "Bugs",
+    "slug": "bugs",
+    "count": 47,
+    "link": "/category/bugs",
+    "featuredmedia": {
+      "sourceUrl": "/images/category/bugs2.avif",
+      "alt": "Bugs"
+    }
   }
 ]

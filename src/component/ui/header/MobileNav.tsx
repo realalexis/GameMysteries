@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 type SidebarLayoutProps = {
   sidebarOpen: boolean;
@@ -71,15 +71,15 @@ const MobileNav = ({
               </svg>
             </div>
             {/*  menu lists */}
-            {headerData.map((item: any, index: number) => (
-              <Link
-                href={item.link}
-                key={index}
-                className="link link-hover text-base text-base-content/80 hover:text-primary transition hover:duration-300 font-work"
-              >
-                {item.name}
-              </Link>
-            ))}
+            <div className="flex flex-col">
+              {headerData.map((item: any, index: number) => (
+                <SubMenu
+                  item={item}
+                  setSidebarOpen={setSidebarOpen}
+                  key={index}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -95,3 +95,80 @@ const MobileNav = ({
 };
 
 export default MobileNav;
+
+const SubMenu = ({ item, setSidebarOpen }: any) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div
+      className={`flex flex-col border-b border-base-content/10 last-of-type:border-0 hover:bg-base-200`}
+    >
+      {item.subMenu ? (
+        <span className="text-base text-base-content/80 flex items-center justify-between gap-2">
+          {item.name}
+          <div
+            className="w-10 flex justify-center items-center flex-none py-3 h-fit"
+            onClick={() => setOpen((prev) => !prev)}
+          >
+            <svg
+              className={`fill-current w-5 h-5 transform transition-all duration-300 ease-in-out ${
+                open ? "rotate-180" : "rotate-0"
+              }`}
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+            </svg>
+          </div>
+        </span>
+      ) : (
+        <Link
+          href={item.link}
+          className={`link block link-hover text-base text-base-content/80 hover:text-primary transition hover:duration-300 font-work ${
+            item.subMenu ? "" : "!py-3 last-of-type:pb-0 first-of-type:pt-0"
+          }`}
+          onClick={() => {
+            setOpen(false);
+            setSidebarOpen(false);
+          }}
+        >
+          {item.name}
+        </Link>
+      )}
+      {item.subMenu && (
+        <ul
+          className={`flex flex-col ${
+            open
+              ? "opacity-100 visible  transition-opacity duration-500"
+              : "opacity-0 invisible h-0"
+          }`}
+        >
+          {item.subMenu.map((subItem: any, index: number) => (
+            <li
+              key={index}
+              className={`border-b border-base-content/10 last-of-type:border-0 pl-3 first-of-type:border-t hover:bg-base-200`}
+            >
+              {subItem.subMenu ? (
+                <SubMenu item={subItem} setSidebarOpen={setSidebarOpen} />
+              ) : (
+                <Link
+                  href={subItem.link}
+                  className={`link block link-hover text-base text-base-content/80 hover:text-primary transition hover:duration-300 font-work ${
+                    subItem.subMenu ? "" : "py-3"
+                  }`}
+                  onClick={() => {
+                    setOpen(false);
+                    setSidebarOpen(false);
+                  }}
+                >
+                  {subItem.name}
+                </Link>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};

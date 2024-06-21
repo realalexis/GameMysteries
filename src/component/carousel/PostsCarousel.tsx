@@ -74,7 +74,7 @@ export const PostsCarousel = ({ data }: PostsCarouselProps) => {
                 {cardData?.category
                   ?.slice(0, 3)
                   ?.map((categoryData: any, index: number) => (
-                    <Link href={`/category/right-sidebar`} key={index}>
+                    <Link href={categoryData?.link} key={index}>
                       <div className="w-fit text-primary-content px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-4">
                         {" "}
                         {categoryData?.name}
@@ -83,7 +83,7 @@ export const PostsCarousel = ({ data }: PostsCarouselProps) => {
                   ))}
                 <h3>
                   <Link
-                    href={`/single-post`}
+                    href={`/single-post/${cardData?.id}`}
                     className="text-base-content line-clam-3 font-semibold text-xl md:text-2xl lg:text-4xl leading-5 md:leading-10 hover:text-primary transition-all hover:duration-500"
                   >
                     {cardData?.title ||

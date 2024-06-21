@@ -4,7 +4,7 @@ import "../styles/globals.css";
 import "swiper/css";
 import useMode, { Providers } from "../utils/themeMode";
 import { GlobalProvider } from "../context/store";
-import { Header } from "../component/ui/header";
+import { Header } from "../component/ui";
 import { headerData } from "../data/headerData";
 
 const Jakarta_Sans = Plus_Jakarta_Sans({
